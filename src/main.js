@@ -9,12 +9,15 @@ import './assets/style/reset.css';
 import './assets/style/font-icon/font-awesome.min.css';
 import Vuex from 'vuex'
 import 'es6-promise/auto'
+import axios from 'axios'
 
 Vue.use(Vuex)
 import VueRouter from 'vue-router'
 
 Vue.use(ElementUI);
 Vue.config.productionTip = false;
+
+Vue.prototype.$http = axios
 
 /* eslint-disable no-new */
 new Vue({

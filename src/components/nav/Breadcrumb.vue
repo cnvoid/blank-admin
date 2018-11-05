@@ -1,6 +1,6 @@
 <template>
   <el-breadcrumb separator-class="el-icon-arrow-right" class="crumb">
-    <el-breadcrumb-item v-for="item in breadcrumbs" :to="{path: item.to}">{{item.name}}</el-breadcrumb-item>
+    <el-breadcrumb-item v-for="item in breadcrumbs" :key="item" :to="{path: item.to}">{{item.name}}</el-breadcrumb-item>
   </el-breadcrumb>
 </template>
 
@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="stylus">
   .crumb{
     line-height: 30px;
   }
