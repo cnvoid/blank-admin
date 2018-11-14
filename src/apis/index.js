@@ -13,7 +13,7 @@ let requestFunc = function (parms, requestConfig = {}) {
       method: requestConfig.method || 'get',
       url: requestConfig.url,
       withCredentials: true,
-      headers: {},
+      headers: requestConfig.header || {},
       data: {},
       params: {}
     }
